@@ -1,0 +1,19 @@
+/* src/pages/ProductListPage.css */
+
+.product-list-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list-page h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Простір між картками */
+}
