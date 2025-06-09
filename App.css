@@ -1,0 +1,151 @@
+/* Standard Create React App CSS */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Стилі для фонового зображення */
+  background-image: url('./assets/fon.jpg'); /* Шлях до вашого зображення */
+  background-size: cover; /* Зображення повністю покриває фон */
+  background-position: center; /* Центрує зображення */
+  background-repeat: no-repeat; /* Запобігає повторенню зображення */
+  background-attachment: fixed; /* Фон нерухомий при прокрутці */
+  min-height: 100vh; /* Гарантує, що фон заповнює всю висоту екрана */
+
+  /* Додатково: якщо ви хочете накласти на зображення легкий напівпрозорий шар кольору #82ce77,
+     щоб воно було менш нав'язливим і текст був краще читабельним.
+     Розкоментуйте наступний рядок, якщо хочете це застосувати: */
+  /* background-image: linear-gradient(rgba(130, 206, 119, 0.5), rgba(130, 206, 119, 0.5)), url('./assets/flower_background.jpg'); */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* App-specific styles */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom styles for your flower shop application */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.85); /* Напівпрозорий фон для основного контенту, щоб текст був читабельним на фоновому зображенні */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4CAF50; /* Зелений колір для заголовків */
+  margin-bottom: 20px;
+}
+
+/* Якщо у вас є UserCard.css або інші файли CSS, переконайтеся, що вони імпортуються у відповідні компоненти */
+/* Наприклад, у UserCard.js має бути import './UserCard.css'; */
+
+/* Приклад стилів для Header, якщо ви його ще не маєте */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Напівпрозорий фон для хедера */
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo a {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #4CAF50;
+}
+
+.cart-link {
+  background-color: #4CAF50;
+  color: white !important;
+  padding: 8px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cart-link:hover {
+  background-color: #388e3c;
+}
+
+.auth-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-links a:hover {
+  color: #4CAF50;
+}
